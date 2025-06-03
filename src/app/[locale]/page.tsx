@@ -1,8 +1,31 @@
 import { useTranslations } from 'next-intl'
 import Button from './components/Button'
+import { useState } from 'react'
 
 export default function DashboardPage() {
   const t = useTranslations('')
+  const experiences = [
+    {
+      title: 'Software Engineer',
+      company: 'Awesome Tech Co.',
+      dates: 'Jan 2022 - Present',
+      description:
+        'Developed scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality products.',
+    },
+    {
+      title: 'Frontend Developer Intern',
+      company: 'Creative Solutions Ltd.',
+      dates: 'Jun 2021 - Dec 2021',
+      description:
+        'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
+    },
+  ]
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const toggle = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
   return (
     <div>
       <section className='flex flex-col items-center justify-center min-h-screen py-20'>
@@ -57,7 +80,49 @@ export default function DashboardPage() {
       </div>
     </div>
   </section>
+  
+  {/* Experience section */}
+      <section className='max-w-5xl mx-auto py-20 px-8'>
+        <h2 className='text-4xl font-extrabold text-center mb-12'>
+          {t('Experience')}
+        </h2>
+        <div className='space-y-4'>
+          {experiences.map(({ title, company, dates, description }, idx) => (
+            <div
+              key={idx}
+              className='border border-gray-300 rounded-lg'
+            >
+              <button
+                onClick={() => toggle(idx)}
+                className='w-full flex justify-between items-center p-4 text-left focus:outline-none'
+                aria-expanded={openIndex === idx}
+                aria-controls={`panel-${idx}`}
+                id={`accordion-${idx}`}
+              >
+                <div>
+                  <h3 className='text-xl font-semibold'>{title}</h3>
+                  <p className='text-green-600 font-medium'>{company}</p>
+                  <p className='italic text-gray-500'>{dates}</p>
+                </div>
+                <span className='text-2xl select-none'>
+                  {openIndex === idx ? '−' : '+'}
+                </span>
+              </button>
 
+              {openIndex === idx && (
+                <div
+                  id={`panel-${idx}`}
+                  role='region'
+                  aria-labelledby={`accordion-${idx}`}
+                  className='px-4 pb-4 text-gray-700'
+                >
+                  {description}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className='bg-background-secondary py-20 max-lg:py-24'>
         <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10'>
