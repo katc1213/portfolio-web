@@ -3,7 +3,7 @@ import { Link } from '@/src/navigation'
 import { useTranslations } from 'next-intl'
 import { FC, useState, useEffect } from 'react'
 import GithubIcon from '../../icons/github'
-import LogoIcon from '../../icons/logo'
+import LogoIcon from '../../icons/K.png'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
 
@@ -36,7 +36,7 @@ export const Header: FC<Props> = ({ locale }) => {
             <div className='mb-2 h-14 w-14'>
               <LogoIcon />
             </div>
-            <strong className='mx-2 select-none'>katherine chang</strong>
+            <strong className='mx-2 select-none'>Katherine Chang</strong>
           </div>
         </Link>
         <div className='flex flex-row items-center gap-3'>
