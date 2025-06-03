@@ -6,6 +6,12 @@ export default function DashboardPage() {
   return (
     <div>
       <section className='flex flex-col items-center justify-center min-h-screen py-20'>
+        {/* Image above the welcome text */}
+    <img
+      src='/lkdn_pfp.jpg' 
+      alt='Katherine headshot'       
+      className='mb-8 w-70 h-70 rounded-full object-cover'
+    />
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
         </h1>
