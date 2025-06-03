@@ -27,7 +27,7 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <header
       className={`sticky top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-[rgba(82, 146, 82, 0.63)] shadow' : 'bg-transparent'
+        scrolled ? 'bg-[rgba(82, 146, 82, 0.93)] shadow' : 'bg-transparent'
       }`}
     >
       <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
