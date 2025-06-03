@@ -50,7 +50,7 @@ export default function DashboardPage() {
       {/* Description on the right */}
       <div className='w-2/3 text-lg text-text-secondary'>
         <p>
-        I\'m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
+        I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
         I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain 
         insight into the intersection of hardware systems and financial markets.
         </p>
