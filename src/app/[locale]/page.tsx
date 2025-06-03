@@ -10,7 +10,7 @@ export default function DashboardPage() {
     <img
       src='/lkdn_pfp.jpg' 
       alt='Katherine headshot'       
-      className='mb-8 w-45 h-45 rounded-full object-cover'
+      className='mb-8 w-30 h-30 rounded-full object-cover'
     />
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
@@ -50,9 +50,9 @@ export default function DashboardPage() {
       {/* Description on the right */}
       <div className='w-2/3 text-lg text-text-secondary'>
         <p>
-        I’m a passionate developer who loves building interactive applications and designing elegant user experiences.
-        With a background in [your background], I focus on crafting responsive and accessible interfaces that perform well
-        and look great. Always learning and always curious.
+        I'm a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
+        I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain insight into the intersection 
+        of hardware systems and financial markets.
         </p>
       </div>
     </div>
