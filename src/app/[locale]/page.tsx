@@ -9,7 +9,7 @@ export default function DashboardPage() {
   const experiences = [
     {
       title: 'Computer Engineer Co-op',
-      company: 'Georgia Tech Researcg Institute',
+      company: 'Georgia Tech Research Institute',
       dates: 'May 2025 - Present',
       description:
         'Developed scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality products.',
@@ -104,7 +104,7 @@ export default function DashboardPage() {
               >
                 <div>
                   <h3 className='text-xl font-semibold'>{title}</h3>
-                  <p className='text-green-600 font-medium'>{company}</p>
+                  <p className='text-[rgb(54,88,56)]-600 font-medium'>{company}</p>
                   <p className='italic text-gray-500'>{dates}</p>
                 </div>
                 <span className='text-2xl select-none'>
@@ -128,7 +128,7 @@ export default function DashboardPage() {
       </section>
 
       <section className='bg-background-secondary py-20 max-lg:py-24'>
-        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-7 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10'>
+        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10'>
           <div className='text-center'>
             <h2 className='mb-3  text-xl font-semibold'>{t('Programming Languages')}</h2>
             <p className='text-text-secondary max-lg:max-w-[500px]'>
