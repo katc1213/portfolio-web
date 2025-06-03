@@ -16,8 +16,15 @@ export default function DashboardPage() {
     },
     {
       title: 'Undergraduate Researcher',
-      company: 'Vertically Integrated Projects',
+      company: 'Configurable Computing and Embedded Systems VIP Hardware Team',
       dates: 'Jan 2024 - Dec 2024',
+      description:
+        'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
+    },
+    {
+      title: 'Student Assistant',
+      company: 'Advanced Technology Development Center',
+      dates: 'Aug 2024 - Present',
       description:
         'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
     },
