@@ -13,7 +13,7 @@ export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
   return (
     <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
-      <Link lang={locale} href='/'>
+      <Link lang="en" href='/'>
         <div className='flex flex-row items-center'>
           <div className='mb-2 h-14 w-14'>
             <LogoIcon />
@@ -26,19 +26,12 @@ export const Header: FC<Props> = ({ locale }) => {
           <Link lang={locale} href={`/about`}>
             {t('About')}
           </Link>
-          <a href=''>{t('Support')}</a>
-          <a href=''>{t('Other')}</a>
+          <a href=''>{t('Experience')}</a>
+          <a href=''>{t('Projects')}</a>
+          <a href=''>{t('Resume')}</a>
         </nav>
         <ThemeSwitch />
         <LangSwitcher />
-        <a
-          href='https://github.com/yahyaparvar/nextjs-template'
-          target='_blank'
-        >
-          <div className='size-8'>
-            <GithubIcon />
-          </div>
-        </a>
       </div>
     </div>
   )

@@ -21,10 +21,10 @@
   }
   .dark {
     --primary: #d6deff;
-    --secondary: rgb(56, 131, 60);
+    --secondary: rgb(54, 88, 56);
     --background: #121212;
     --background-secondary: #1b1b1b;
-    --button: rgb(56, 131, 60);
+    --button: rgb(54, 88, 56);
     --button-text: #fff;
     --text-secondary: #bbbbbb;
     --dropdown: #2d2d2d;
