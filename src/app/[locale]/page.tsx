@@ -12,21 +12,21 @@ export default function DashboardPage() {
       company: 'Georgia Tech Research Institute',
       dates: 'May 2025 - Present',
       description:
-        'Developed scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality products.',
+        'Implement driver code for I2C communication between STM32 microcontoller, current sensor, and digital potentiometer to tune high power amplifier for antenna, resulting in 30 dB gain.',
     },
     {
       title: 'Undergraduate Researcher',
       company: 'Configurable Computing and Embedded Systems VIP Hardware Team',
       dates: 'Jan 2024 - Dec 2024',
       description:
-        'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
+        'Research methods for data encryption in voting machines and compatibility of AES with AXI interface on Xilinx Pynq Z2 development board.',
     },
     {
       title: 'Student Assistant',
       company: 'Advanced Technology Development Center',
       dates: 'Aug 2024 - Present',
       description:
-        'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
+        'Organize company directories and assisted with office operations (media design, Salesforce updates)',
     },
   ]
 
