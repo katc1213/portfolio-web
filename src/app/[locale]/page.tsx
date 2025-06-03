@@ -19,7 +19,7 @@ export default function DashboardPage() {
             href='https://www.linkedin.com/in/kchang312'
             target='_blank'
           >
-            <Button rounded size='large'>
+            <Button rounded size='medium'>
               {t('Linkedin')}
             </Button>
           </a>
@@ -27,7 +27,7 @@ export default function DashboardPage() {
             href='https://github.com/katc1213'
             target='_blank'
           >
-            <Button rounded size='large' variant='secondary'>
+            <Button rounded size='medium' variant='secondary'>
               {t('Github')}
             </Button>
           </a>

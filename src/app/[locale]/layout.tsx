@@ -46,16 +46,11 @@ export default function RootLayout({
         <ThemeProvider
           enableSystem
           attribute='class'
-          defaultTheme='light'
+          defaultTheme='dark'
           themes={[
             'light',
             'dark',
-            'instagram',
-            'facebook',
-            'discord',
-            'netflix',
-            'twilight',
-            'reddit'
+            'twilight'
           ]}
         >
           <NextIntlClientProvider
@@ -69,7 +64,7 @@ export default function RootLayout({
               crawl={true}
               easing='ease'
               speed={200}
-              shadow='0 0 10px #2299DD,0 0 5px #2299DD'
+              shadow='0 0 10pxrgba(104, 177, 108, 0.6),0 0 5pxrgba(104, 177, 108, 0.6)'
               color='var(--primary)'
               showSpinner={false}
             />
