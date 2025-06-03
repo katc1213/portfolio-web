@@ -10,7 +10,7 @@ export default function DashboardPage() {
     <img
       src='/lkdn_pfp.jpg' 
       alt='Katherine headshot'       
-      className='mb-8 w-40 h-40 rounded-full object-cover'
+      className='mb-12 w-60 h-60 rounded-full object-cover'
     />
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
