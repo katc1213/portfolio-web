@@ -7,28 +7,28 @@ export default function DashboardPage() {
     <div>
       <section className='flex flex-col items-center justify-center py-24'>
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
-          {t('Hello!_Welcome_to_my_portfolio!')}
+          {t('Hello, I\'m Katherine!')}
         </h1>
         <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
           {t(
-            'An_approachable_performant_and_versatile_boilerplate_for_building_SSR_applications'
+            'Welcome to my portfolio website. Scroll down to learn more about me.'
           )}
         </div>
         <div className='mt-4 flex flex-row gap-4'>
           <a
-            href='https://github.com/new?template_name=nextjs-template&template_owner=yahyaparvar'
+            href='https://www.linkedin.com/in/kchang312'
             target='_blank'
           >
             <Button rounded size='large'>
-              {t('Use_Template')}
+              {t('Linkedin')}
             </Button>
           </a>
           <a
-            href='https://github.com/yahyaparvar/nextjs-template'
+            href='https://github.com/katc1213'
             target='_blank'
           >
             <Button rounded size='large' variant='secondary'>
-              {t('Learn_More')}
+              {t('Github')}
             </Button>
           </a>
         </div>
