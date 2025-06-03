@@ -10,7 +10,7 @@ export default function DashboardPage() {
     <img
       src='/lkdn_pfp.jpg' 
       alt='Katherine headshot'       
-      className='mb-8 w-24 h-24 rounded-full object-cover'
+      className='mb-8 w-40 h-40 rounded-full object-cover'
     />
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
@@ -51,8 +51,8 @@ export default function DashboardPage() {
       <div className='w-2/3 text-lg text-text-secondary'>
         <p>
         I'm a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
-        I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain insight into the intersection 
-        of hardware systems and financial markets.
+        I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain 
+        insight into the intersection of hardware systems and financial markets.
         </p>
       </div>
     </div>
