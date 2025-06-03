@@ -8,16 +8,16 @@ export default function DashboardPage() {
   const t = useTranslations('')
   const experiences = [
     {
-      title: 'Software Engineer',
-      company: 'Awesome Tech Co.',
-      dates: 'Jan 2022 - Present',
+      title: 'Computer Engineer Co-op',
+      company: 'Georgia Tech Researcg Institute',
+      dates: 'May 2025 - Present',
       description:
         'Developed scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality products.',
     },
     {
-      title: 'Frontend Developer Intern',
-      company: 'Creative Solutions Ltd.',
-      dates: 'Jun 2021 - Dec 2021',
+      title: 'Undergraduate Researcher',
+      company: 'Vertically Integrated Projects',
+      dates: 'Jan 2024 - Dec 2024',
       description:
         'Implemented UI components and improved accessibility of the company website using React and Tailwind CSS.',
     },
@@ -92,7 +92,8 @@ export default function DashboardPage() {
           {experiences.map(({ title, company, dates, description }, idx) => (
             <div
               key={idx}
-              className='border border-gray-300 rounded-lg'
+              className='border rounded-lg'
+              style={{ borderColor: 'rgb(54, 88, 56)' }}
             >
               <button
                 onClick={() => toggle(idx)}
