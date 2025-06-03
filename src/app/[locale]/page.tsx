@@ -5,7 +5,7 @@ export default function DashboardPage() {
   const t = useTranslations('')
   return (
     <div>
-      <section className='flex flex-col items-center justify-center py-48'>
+      <section className='flex flex-col items-center justify-center min-h-screen py-20'>
         <h1 className='text-center text-7xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
         </h1>
@@ -34,7 +34,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='flex flex-col items-center justify-center py-40'>
+      <section className='flex flex-col items-center justify-center py-48'>
    <div className='flex w-full max-w-5xl px-8'>
       {/* Title on the left */}
       <div className='w-1/3 pr-8'>
