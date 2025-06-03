@@ -12,6 +12,7 @@ interface Props {
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
   return (
+    <header className='sticky top-0 left-0 w-full bg-white shadow z-50'>
     <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
       <Link lang="en" href='/'>
         <div className='flex flex-row items-center'>
@@ -34,5 +35,6 @@ export const Header: FC<Props> = ({ locale }) => {
         <LangSwitcher />
       </div>
     </div>
+    </header>
   )
 }
