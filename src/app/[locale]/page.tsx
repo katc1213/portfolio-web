@@ -83,8 +83,8 @@ export default function DashboardPage() {
       <div className='w-2/3 text-lg text-text-secondary'>
         <p>
         I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
-        I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain 
-        insight into the implementaion of hardware systems and emerging technology in financial markets.
+        I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
+        in hardware engineering or design verification of low-latency hardware in financial markets.
         </p>
       </div>
     </div>
