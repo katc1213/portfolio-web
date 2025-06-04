@@ -44,7 +44,7 @@ export default function DashboardPage() {
       alt='Katherine headshot'       
       className='mb-12 w-60 h-60 rounded-full object-cover'
     />
-        <h1 className='text-center text-7xl font-extrabold leading-tight'>
+        <h1 className='text-center text-5xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
         </h1>
         <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
