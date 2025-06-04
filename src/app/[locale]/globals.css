@@ -3,23 +3,8 @@
 @tailwind utilities;
 
 @layer base {
+  /* ===== DARK (default) ===== */
   :root {
-    --primary: #333366;
-    --secondary: #097fa5;
-    --background: #ededed;
-    --background-secondary: #c8dde3;
-    --button: #097fa5;
-    --button-text: #fff;
-    --text-secondary: #3c3c3c;
-    --dropdown: #e0f4ff;
-    --dropdown-hover: #b3e5ff;
-    --button-secondary: #e7e7e7;
-    --selected: #9ec6ff;
-    --logo-shadow: #053949;
-    --logo-body: #00d8fe;
-    --span-bg: linear-gradient(to right, #4e4e9e, #097fa5, #3e87ed);
-  }
-  .dark {
     --primary: #d6deff;
     --secondary: rgb(54, 88, 56);
     --background: #121212;
@@ -35,15 +20,32 @@
     --logo-body: #097fa5;
     --span-bg: linear-gradient(to right, #8c00ff, #0fb4e1, #a1d930, #ae0000);
   }
+
+  /* ===== LIGHT (optional override) ===== */
+  .light {
+    --primary: #333366;
+    --secondary: #097fa5;
+    --background: #ededed;
+    --background-secondary: #c8dde3;
+    --button: #097fa5;
+    --button-text: #fff;
+    --text-secondary: #3c3c3c;
+    --dropdown: #e0f4ff;
+    --dropdown-hover: #b3e5ff;
+    --button-secondary: #e7e7e7;
+    --selected: #9ec6ff;
+    --logo-shadow: #053949;
+    --logo-body: #00d8fe;
+    --span-bg: linear-gradient(to right, #4e4e9e, #097fa5, #3e87ed);
+  }
 }
 
 @layer base {
-  *:lang(ar) {
-    font-family: var(--rubik) !important;
-  }
+  *:lang(ar),
   *:lang(fa) {
     font-family: var(--rubik) !important;
   }
+
   div::selection,
   h1::selection,
   button::selection,
@@ -51,12 +53,12 @@
   span::selection,
   a::selection,
   h2::selection {
-    background-color: rgb(121, 255, 225);
-    text-shadow: rgb(0, 102, 255) 0px 0px 7px;
-    color: rgb(248, 28, 229);
+    background-color: rgb(121 255 225);
+    text-shadow: 0 0 7px rgb(0 102 255);
+    color: rgb(248 28 229);
   }
+
   body {
-    @apply .dark;
     @apply bg-background text-primary m-0 p-0 w-full overflow-x-hidden;
     width: 100%;
   }
