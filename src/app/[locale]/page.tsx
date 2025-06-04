@@ -72,7 +72,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-    <section id="about" className='w-full bg-background-secondary py-48 px-10'>
+    <section id="about" className='w-full bg-background-secondary py-48 px-0'>
     <div className='flex flex-col items-center justify-center w-full max-w-5xl mx-auto'>
     <div className='flex w-full px-8'>
       {/* Title on the left */}
@@ -137,11 +137,11 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='w-full bg-background-secondary py-48 px-10'>
+      <section className='w-full bg-background-secondary py-48 px-0'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Skills')}
         </h2>
-        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-14'>
+        <div className='grid grid-cols-3 gap-12 px-8 py-5 max-lg:grid-cols-1 max-lg:gap-14'>
           <div className='text-center'>
             <h2 className='mb-3  text-xl font-semibold'>{t('Programming Languages')}</h2>
             <p className='text-text-secondary max-lg:max-w-[500px]'>
