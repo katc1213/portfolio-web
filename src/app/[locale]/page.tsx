@@ -47,7 +47,7 @@ export default function DashboardPage() {
         <h1 className='text-center text-5xl font-extrabold leading-tight'>
           {t('Hello, I\'m Katherine!')}
         </h1>
-        <div className='my-6 px-20 text-center text-2xl text-text-secondary'>
+        <div className='my-6 px-20 text-center text-1xl text-text-secondary'>
           {t(
             'Welcome to my portfolio website. Scroll down to learn more about me.'
           )}
@@ -84,7 +84,7 @@ export default function DashboardPage() {
         <p>
         I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
         I have experience in low-level programming with embedded systems and FPGAs, currently seeking to gain 
-        insight into the intersection of hardware systems and financial markets.
+        insight into the implementaion of hardware systems and emerging technology in financial markets.
         </p>
       </div>
     </div>
