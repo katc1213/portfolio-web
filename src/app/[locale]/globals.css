@@ -5,10 +5,10 @@
 @layer base {
   :root {
     --primary: #333366;
-    --secondary: rgb(54, 88, 56);       /* updated */
+    --secondary: #097fa5;
     --background: #ededed;
     --background-secondary: #c8dde3;
-    --button: rgb(54, 88, 56);          /* updated */
+    --button: #097fa5;
     --button-text: #fff;
     --text-secondary: #3c3c3c;
     --dropdown: #e0f4ff;
@@ -19,7 +19,6 @@
     --logo-body: #00d8fe;
     --span-bg: linear-gradient(to right, #4e4e9e, #097fa5, #3e87ed);
   }
-
   .dark {
     --primary: #d6deff;
     --secondary: rgb(54, 88, 56);
