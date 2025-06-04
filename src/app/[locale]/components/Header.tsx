@@ -41,11 +41,9 @@ export const Header: FC<Props> = ({ locale }) => {
         </Link>
         <div className='flex flex-row items-center gap-3'>
           <nav className='mr-10 inline-flex gap-5'>
-            <Link lang={locale} href={`/about`}>
-              {t('About')}
-            </Link>
-            <a href=''>{t('Experience')}</a>
-            <a href=''>{t('Projects')}</a>
+            <a href='#about'>{t('About')}</a>
+            <a href='#experience'>{t('Experience')}</a>
+            <a href='#projects'>{t('Projects')}</a>
             <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
             {t('Resume')}</a>
 

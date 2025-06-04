@@ -72,7 +72,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='flex flex-col items-center justify-center py-48'>
+      <section id="about" className='flex flex-col items-center justify-center py-48'>
    <div className='flex w-full max-w-5xl px-8'>
       {/* Title on the left */}
       <div className='w-1/3 pr-8'>
@@ -91,7 +91,7 @@ export default function DashboardPage() {
   </section>
   
   {/* Experience section */}
-      <section className='max-w-5xl mx-auto py-20 px-8'>
+      <section id="experience" className='max-w-5xl mx-auto py-20 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Experience')}
         </h2>
@@ -163,7 +163,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='max-w-5xl mx-auto py-20 px-8'>
+      <section id="projects" className='max-w-5xl mx-auto py-20 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Projects')}
         </h2>
