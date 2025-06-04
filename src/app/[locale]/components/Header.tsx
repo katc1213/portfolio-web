@@ -3,7 +3,7 @@ import { Link } from '@/src/navigation'
 import { useTranslations } from 'next-intl'
 import { FC, useState, useEffect } from 'react'
 import GithubIcon from '../../icons/github'
-import LogoIcon from '../../icons/logo'
+import LogoIcon from './LogoIcon'
 import LangSwitcher from './LangSwitcher'
 import ThemeSwitch from './ThemeSwitch'
 
@@ -13,11 +13,11 @@ interface Props {
 
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
-  const [scrolledPastHero, setScrolledPastHero] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolledPastHero(window.scrollY > window.innerHeight)
+      setScrolled(window.scrollY > 0)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -27,9 +27,7 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <header
       className={`sticky top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolledPastHero
-          ? 'bg-white shadow dark:bg-[rgb(105,117,101)]' // Matcha green in dark mode
-          : 'bg-transparent'
+        scrolled ? 'bg-[rgb(105,117,101)] shadow' : 'bg-transparent'
       }`}
     >
       <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
