@@ -13,11 +13,11 @@ interface Props {
 
 export const Header: FC<Props> = ({ locale }) => {
   const t = useTranslations('')
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolledPastHero, setScrolledPastHero] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0)
+      setScrolledPastHero(window.scrollY > window.innerHeight)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -27,7 +27,9 @@ export const Header: FC<Props> = ({ locale }) => {
   return (
     <header
       className={`sticky top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? 'bg-[rgb(82, 146, 82)] shadow' : 'bg-transparent'
+        scrolledPastHero
+          ? 'bg-white shadow dark:bg-[rgb(105,117,101)]' // Matcha green in dark mode
+          : 'bg-transparent'
       }`}
     >
       <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
@@ -45,8 +47,8 @@ export const Header: FC<Props> = ({ locale }) => {
             <a href='#experience'>{t('Experience')}</a>
             <a href='#projects'>{t('Projects')}</a>
             <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
-            {t('Resume')}</a>
-
+              {t('Resume')}
+            </a>
           </nav>
           <ThemeSwitch />
           <LangSwitcher />
@@ -55,4 +57,3 @@ export const Header: FC<Props> = ({ locale }) => {
     </header>
   )
 }
-
