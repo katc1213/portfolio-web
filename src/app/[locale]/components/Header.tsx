@@ -46,7 +46,9 @@ export const Header: FC<Props> = ({ locale }) => {
             </Link>
             <a href=''>{t('Experience')}</a>
             <a href=''>{t('Projects')}</a>
-            <a href=''>{t('Resume')}</a>
+            <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+            {t('Resume')}</a>
+
           </nav>
           <ThemeSwitch />
           <LangSwitcher />
