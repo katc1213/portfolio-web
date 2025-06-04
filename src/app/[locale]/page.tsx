@@ -72,28 +72,30 @@ export default function DashboardPage() {
         </div>
       </section>
 
-    <section id="about" className='w-full bg-background-secondary py-48 px-0'>
-    
-    <div className='flex w-full'>
-      {/* Title on the left */}
-      <div className='w-1/3 pr-8'>
-        <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
-      </div>
+    <section id="about" className='w-full bg-background-secondary py-48 px-10'>
+      <div className='flex flex-col items-center justify-center w-full max-w-5xl mx-auto'>
+      <div className='flex w-full px-8'>
+        {/* Title on the left */}
+        <div className='w-1/3 pr-8'>
+          <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
+        </div>
 
-      {/* Description on the right */}
-      <div className='w-2/3 text-lg text-text-secondary'>
-        <p>
-          I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
-          I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
-          in hardware engineering or design verification of low-latency hardware in financial markets.
-        </p>
+        {/* Description on the right */}
+        <div className='w-2/3 text-lg text-text-secondary'>
+          <p>
+            I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
+            I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
+            in hardware engineering or design verification of low-latency hardware in financial markets.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
+
 
   
   {/* Experience section */}
-      <section id="experience" className='max-w-5xl mx-auto py-40 px-8'>
+    <section id="experience" className='max-w-5xl mx-auto py-40 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Experience')}
         </h2>
@@ -134,39 +136,34 @@ export default function DashboardPage() {
             </div>
           ))}
         </div>
-      </section>
+    </section>
 
-      <section className='w-full bg-background-secondary py-48 px-0'>
-        <h2 className='text-4xl font-extrabold text-center mb-12'>
-          {t('Skills')}
-        </h2>
-        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-14'>
-          <div className='text-center'>
-            <h2 className='mb-3  text-xl font-semibold'>{t('Programming Languages')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'Verilog, SystemVerilog, VHDL, C, C++, Java, Python, JavaScript, Swift'
-              )}
-            </p>
-          </div>
-          <div className='text-center'>
-            <h2 className='mb-3 text-xl font-semibold'>{t('Developer Tools')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'Xilinx Vivado, Quartus, STMCube, Arduino'
-              )}
-            </p>
-          </div>
-          <div className='text-center'>
-            <h2 className='mb-3 text-xl font-semibold'>{t('Coursework')}</h2>
-            <p className='text-text-secondary max-lg:max-w-[500px]'>
-              {t(
-                'Computer Architecture, Embedded Systems Design, Digital Design Lab, Mobile Ubiquitous Computing'
-              )}
-            </p>
-          </div>
-        </div>
-      </section>
+    <section className='w-full bg-background-secondary py-20'>
+      <h2 className='text-4xl font-extrabold text-center mb-12'>
+        {t('Skills')}
+      </h2>
+      <div className='grid grid-cols-3 gap-12 px-8 py-5 max-lg:grid-cols-1 max-lg:gap-14'>
+      <div className='text-center'>
+        <h2 className='mb-3 text-xl font-semibold'>{t('Programming Languages')}</h2>
+          <p className='text-text-secondary max-lg:max-w-[500px]'>
+          {t('Verilog, SystemVerilog, VHDL, C, C++, Java, Python, JavaScript, Swift')}
+          </p>
+      </div>
+      <div className='text-center'>
+        <h2 className='mb-3 text-xl font-semibold'>{t('Developer Tools')}</h2>
+          <p className='text-text-secondary max-lg:max-w-[500px]'>
+          {t('Xilinx Vivado, Quartus, STMCube, Arduino')}
+          </p>
+      </div>
+      <div className='text-center'>
+        <h2 className='mb-3 text-xl font-semibold'>{t('Coursework')}</h2>
+          <p className='text-text-secondary max-lg:max-w-[500px]'>
+          {t('Computer Architecture, Embedded Systems Design, Digital Design Lab, Mobile Ubiquitous Computing')}
+          </p>
+      </div>
+      </div>
+    </section>
+
 
       <section id="projects" className='max-w-5xl mx-auto py-20 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
