@@ -142,7 +142,7 @@ export default function DashboardPage() {
       <h2 className='text-4xl font-extrabold text-center mb-12'>
         {t('Skills')}
       </h2>
-      <div className='grid grid-cols-3 gap-12 px-8 py-5 max-lg:grid-cols-1 max-lg:gap-14'>
+      <div className='grid grid-cols-3 gap-12 px-8 py-5 max-lg:grid-cols-1 max-lg:gap-14 max-lg:justify-items-center'>
       <div className='text-center'>
         <h2 className='mb-3 text-xl font-semibold'>{t('Programming Languages')}</h2>
           <p className='text-text-secondary max-lg:max-w-[500px]'>
