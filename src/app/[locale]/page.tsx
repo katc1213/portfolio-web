@@ -91,7 +91,7 @@ export default function DashboardPage() {
   </section>
   
   {/* Experience section */}
-      <section id="experience" className='max-w-5xl mx-auto py-20 px-8'>
+      <section id="experience" className='max-w-5xl mx-auto py-40 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Experience')}
         </h2>
@@ -134,7 +134,10 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='bg-background-secondary py-20 max-lg:py-24'>
+      <section className='bg-background-secondary py-20 max-lg:py-40 px-10'>
+        <h2 className='text-4xl font-extrabold text-center mb-12'>
+          {t('Skills')}
+        </h2>
         <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-14'>
           <div className='text-center'>
             <h2 className='mb-3  text-xl font-semibold'>{t('Programming Languages')}</h2>
