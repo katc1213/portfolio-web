@@ -72,23 +72,26 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section id="about" className='flex flex-col items-center justify-center py-48'>
-   <div className='flex w-full max-w-5xl px-8'>
+    <section id="about" className='w-full bg-background-secondary py-48 px-10'>
+    <div className='flex flex-col items-center justify-center w-full max-w-5xl mx-auto'>
+    <div className='flex w-full px-8'>
       {/* Title on the left */}
       <div className='w-1/3 pr-8'>
-       <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
+        <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
       </div>
-    
+
       {/* Description on the right */}
       <div className='w-2/3 text-lg text-text-secondary'>
         <p>
-        I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
-        I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
-        in hardware engineering or design verification of low-latency hardware in financial markets.
+          I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech. 
+          I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
+          in hardware engineering or design verification of low-latency hardware in financial markets.
         </p>
       </div>
     </div>
+    </div>
   </section>
+
   
   {/* Experience section */}
       <section id="experience" className='max-w-5xl mx-auto py-40 px-8'>
@@ -134,7 +137,7 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section className='bg-background-secondary py-20 max-lg:py-40 px-10'>
+      <section className='w-full bg-background-secondary py-48 px-10'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Skills')}
         </h2>
