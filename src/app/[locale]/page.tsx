@@ -73,7 +73,8 @@ export default function DashboardPage() {
       </section>
 
     <section id="about" className='w-full bg-background-secondary py-48 px-0'>
-    <div className="max-w-6xl mx-auto px-8">
+    
+    <div className='flex w-full'>
       {/* Title on the left */}
       <div className='w-1/3 pr-8'>
         <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
@@ -87,7 +88,6 @@ export default function DashboardPage() {
           in hardware engineering or design verification of low-latency hardware in financial markets.
         </p>
       </div>
-    </div>
     </div>
   </section>
 
