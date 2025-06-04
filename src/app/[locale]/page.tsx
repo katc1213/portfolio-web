@@ -135,7 +135,7 @@ export default function DashboardPage() {
       </section>
 
       <section className='bg-background-secondary py-20 max-lg:py-24'>
-        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-10'>
+        <div className='mx-auto grid max-w-screen-lg grid-cols-3 gap-12 px-8 py-5 max-lg:max-w-fit max-lg:grid-cols-1 max-lg:gap-14'>
           <div className='text-center'>
             <h2 className='mb-3  text-xl font-semibold'>{t('Programming Languages')}</h2>
             <p className='text-text-secondary max-lg:max-w-[500px]'>
@@ -148,7 +148,7 @@ export default function DashboardPage() {
             <h2 className='mb-3 text-xl font-semibold'>{t('Developer Tools')}</h2>
             <p className='text-text-secondary max-lg:max-w-[500px]'>
               {t(
-                'Xilinx Vivado, Quartus, '
+                'Xilinx Vivado, Quartus, STMCube, Arduino'
               )}
             </p>
           </div>
@@ -156,12 +156,18 @@ export default function DashboardPage() {
             <h2 className='mb-3 text-xl font-semibold'>{t('Coursework')}</h2>
             <p className='text-text-secondary max-lg:max-w-[500px]'>
               {t(
-                'Computer Architecture, Embedded Systems Design, Digital Design Lab'
+                'Computer Architecture, Embedded Systems Design, Digital Design Lab, Mobile Ubiquitous Computing'
               )}
             </p>
           </div>
         </div>
       </section>
+
+      <section className='max-w-5xl mx-auto py-20 px-8'>
+        <h2 className='text-4xl font-extrabold text-center mb-12'>
+          {t('Projects')}
+        </h2>
+        </section>
     </div>
   )
 }

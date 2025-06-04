@@ -49,8 +49,7 @@ export default function RootLayout({
           defaultTheme='dark'
           themes={[
             'light',
-            'dark',
-            'twilight'
+            'dark'
           ]}
         >
           <NextIntlClientProvider
