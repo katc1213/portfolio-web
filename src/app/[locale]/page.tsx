@@ -73,8 +73,7 @@ export default function DashboardPage() {
       </section>
 
     <section id="about" className='w-full bg-background-secondary py-48 px-0'>
-    <div className='flex flex-col items-center justify-center w-full max-w-5xl mx-auto'>
-    <div className='flex w-full px-8'>
+    <div className="max-w-6xl mx-auto px-8">
       {/* Title on the left */}
       <div className='w-1/3 pr-8'>
         <h2 className='text-4xl font-bold text-text-primary'>About Me</h2>
