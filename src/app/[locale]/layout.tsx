@@ -27,7 +27,10 @@ const space_grotesk = Space_Grotesk({
 })
 export const metadata: Metadata = {
   title: 'Katherine Chang',
-  description: 'Welcome to my portfolio!'
+  description: 'Welcome to my portfolio!',
+  icons: {
+    icon: '/favicon.ico' // or '/favicon.ico' if using .ico
+  }
 }
 
 export default function RootLayout({
