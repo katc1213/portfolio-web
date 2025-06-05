@@ -43,7 +43,7 @@
 @layer base {
   *:lang(ar),
   *:lang(fa) {
-    font-family: var(--raleway) !important;
+    font-family: var(--rubik) !important;
   }
 
   div::selection,

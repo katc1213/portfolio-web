@@ -5,7 +5,7 @@ import {
   NextIntlClientProvider,
   useMessages
 } from 'next-intl'
-import { Bitter, Raleway, Karla } from 'next/font/google'
+import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import Head from 'next/head'
 import { Header } from './components/Header'
@@ -13,17 +13,17 @@ import { Footer } from './components/Footer'
 
 import './globals.css'
 
-const bitter = Bitter({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--bitter'
+  variable: '--inter'
 })
-const raleway = Raleway({
-  subsets: ['latin'],
-  variable: '--raleway'
+const rubik = Rubik({
+  subsets: ['arabic'],
+  variable: '--rubik'
 })
-const karla = Karla({
+const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--karla'
+  variable: '--font-space-grotesk'
 })
 export const metadata: Metadata = {
   title: 'Katherine Chang',
@@ -45,7 +45,7 @@ export default function RootLayout({
     <html
       lang={locale}
       dir={locale === 'ar' || locale == 'fa' ? 'rtl' : 'ltr'}
-      className={`${karla.variable} ${raleway.variable} scroll-smooth`}
+      className={`${space_grotesk.variable} ${rubik.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <Head>
