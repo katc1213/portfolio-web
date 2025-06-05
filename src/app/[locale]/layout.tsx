@@ -8,6 +8,8 @@ import {
 import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import { Header } from './components/Header'
+import { Footer } from '@/components/Footer'
+
 import './globals.css'
 
 const inter = Inter({
@@ -69,6 +71,7 @@ export default function RootLayout({
             />
             <Header locale={locale} />
             <main className='mx-auto max-w-screen-2xl'>{children}</main>
+            <Footer /> 
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
