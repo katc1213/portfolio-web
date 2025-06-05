@@ -45,7 +45,7 @@ export default function RootLayout({
     <html
       lang={locale}
       dir={locale === 'ar' || locale == 'fa' ? 'rtl' : 'ltr'}
-      className={`${raleway.variable} ${bitter.variable} scroll-smooth`}
+      className={`${karla.variable} ${raleway.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <Head>
