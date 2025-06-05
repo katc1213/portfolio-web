@@ -33,10 +33,10 @@ export const Header: FC<Props> = ({ locale }) => {
       <div className='mx-auto flex max-w-screen-2xl flex-row items-center justify-between p-5'>
         <Link lang='en' href='/'>
           <div className='flex flex-row items-center'>
-              <div className='mb-2 h-14 w-14'>
+              <div className='mb-2 h-10 w-10'>
                 <img src='/logo.png' alt='Logo' className='h-full w-full object-contain' />
               </div>
-            <strong className='mx-2 select-none'>Katherine Chang</strong>
+            <strong className='ml-4 select-none'>Katherine Chang</strong>
           </div>
         </Link>
         <div className='flex flex-row items-center gap-3'>
