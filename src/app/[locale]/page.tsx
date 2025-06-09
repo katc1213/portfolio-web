@@ -32,6 +32,21 @@ export default function DashboardPage() {
     },
   ]
 
+  const projects = [
+    {
+      title: 'FPGA Orderbook',
+      type: 'Personal Project',
+      dates: 'May 2025 - Present',
+      description: 'Developing a trading orderbook on Xilinx Pynq Z2 FPGA board that takes in and stores order entries.'
+    },
+    {
+      title: 'Pace Controlled Volume App',
+      type: 'CS 4605 - Mobile Ubiquitous Computing',
+      dates: 'Jan 2025 - May 2025',
+      description: 'Designed iOS application that adjusts user\'s music volume based on running pace, analyzing real-time biofeedback from Apple Airpod Pro earbud sensors.'
+    },
+  ]
+
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
@@ -157,11 +172,54 @@ export default function DashboardPage() {
       </section>
 
       {/* PROJECTS */}
-      <section id='projects' className='max-w-5xl mx-auto py-20 px-8'>
+      <section id='projects' className='w-full min-h-screen flex items-center justify-center px-8 py-20'>
+        <div className='flex w-full max-w-5xl'>
+          <div className='w-1/3 pr-8'>
+            <h2 className='text-4xl font-bold text-text-primary'>{t('Projects')}</h2>
+          </div>
+          <div className='w-2/3 space-y-6'>
+            {projects.map(({ title, type, dates, description }, idx) => {
+              const isOpen = openIndex === idx
+              return (
+                <div key={idx} className='border rounded-lg' style={{ borderColor: 'rgb(54, 88, 56)' }}>
+                  <button
+                    onClick={() => toggle(idx)}
+                    className='w-full flex justify-between items-center p-4 text-left focus:outline-none'
+                    aria-expanded={isOpen}
+                    aria-controls={`panel-${idx}`}
+                    id={`accordion-${idx}`}
+                  >
+                    <div>
+                      <h3 className='text-xl font-semibold'>{title}</h3>
+                      <p className='text-[rgb(54,88,56)] font-medium'>{type}</p>
+                      <p className='italic text-gray-500'>{dates}</p>
+                    </div>
+                    <span className='text-2xl select-none'>
+                      {isOpen ? '−' : '+'}
+                    </span>
+                  </button>
+                  <div
+                    id={`panel-${idx}`}
+                    role='region'
+                    aria-labelledby={`accordion-${idx}`}
+                    className={clsx(
+                      'overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-700',
+                      isOpen ? 'max-h-40 pb-4' : 'max-h-0'
+                    )}
+                  >
+                    {description}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+      {/* <section id='projects' className='max-w-5xl mx-auto py-20 px-8'>
         <h2 className='text-4xl font-extrabold text-center mb-12'>
           {t('Projects')}
         </h2>
-      </section>
-    </div>
+      </section> */}
+    
   )
 }
