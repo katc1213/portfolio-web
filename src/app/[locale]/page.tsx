@@ -220,6 +220,6 @@ export default function DashboardPage() {
           {t('Projects')}
         </h2>
       </section> */}
-    
+    </div>
   )
 }
