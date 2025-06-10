@@ -21,7 +21,7 @@ export default function DashboardPage() {
       company: 'Configurable Computing and Embedded Systems VIP Hardware Team',
       dates: 'Jan 2024 - Dec 2024',
       description:
-        'Research methods for data encryption in voting machines and compatibility of AES with AXI interface on Xilinx Pynq Z2 development board.',
+        'Research methods for data encryption in voting machines and compatibility of AES with AXI interface on Xilinx Pynq Z2 development board. <br /> https://github.gatech.edu/ConfigurableComputing/vip/wiki/Hardware-Subteam-Fall-2024',
     },
     {
       title: 'Student Assistant',
@@ -88,7 +88,8 @@ export default function DashboardPage() {
               <p>
                 I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech.
                 I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
-                in hardware engineering or design verification of low-latency hardware in financial markets.
+                in hardware engineering, design verification, or technical product management. <br />
+                During my free time, I love to run, play badminton or golf, and visit cafes around the city.
               </p>
             </div>
           </div>
