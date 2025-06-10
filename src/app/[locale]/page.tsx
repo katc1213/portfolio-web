@@ -20,8 +20,19 @@ export default function DashboardPage() {
       title: 'Undergraduate Researcher',
       company: 'Configurable Computing and Embedded Systems VIP Hardware Team',
       dates: 'Jan 2024 - Dec 2024',
-      description:
-        'Research methods for data encryption in voting machines and compatibility of AES with AXI interface on Xilinx Pynq Z2 development board. <br /> https://github.gatech.edu/ConfigurableComputing/vip/wiki/Hardware-Subteam-Fall-2024',
+      description: (
+    <>
+      Research methods for data encryption in voting machines and compatibility of AES with AXI interface on Xilinx Pynq Z2 development board.{' '}
+      <a
+        href="https://github.gatech.edu/ConfigurableComputing/vip/wiki/Hardware-Subteam-Fall-2024"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-secondary underline hover:text-primary"
+      >
+        Click here for an overview of our hardware subteam
+      </a>
+    </>
+    ),
     },
     {
       title: 'Student Assistant',
