@@ -98,8 +98,8 @@ export default function DashboardPage() {
             <div className='w-2/3 text-lg text-text-secondary'>
               <p>
                 I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech.
-                I have experience in low-level programming with embedded systems and FPGAs, currently seeking a career
-                in hardware engineering, design verification, or technical product management. <br />
+                I have experience in data analytics as well as low-level programming with embedded systems. I am currently seeking a career
+                in data engineering, hardware engineering, or technical product management in financial markets. <br />
                 During my free time, I love to run, play badminton or golf, and visit cafes around the city.
               </p>
             </div>
@@ -164,19 +164,19 @@ export default function DashboardPage() {
             <div className='text-center'>
               <h2 className='mb-3 text-xl font-semibold'>{t('Programming Languages')}</h2>
               <p className='text-text-secondary max-lg:max-w-[500px]'>
-                {t('Verilog, SystemVerilog, VHDL, C, C++, Java, Python, JavaScript, Swift')}
+                {t('Java, Python, C, C++, SQL, Verilog, SystemVerilog, JavaScript, Swift')}
               </p>
             </div>
             <div className='text-center'>
               <h2 className='mb-3 text-xl font-semibold'>{t('Developer Tools')}</h2>
               <p className='text-text-secondary max-lg:max-w-[500px]'>
-                {t('Xilinx Vivado, Quartus, STMCube, Arduino')}
+                {t('SQLite, STMCube, Arduino, Xilinx Vivado, Quartus')}
               </p>
             </div>
             <div className='text-center'>
               <h2 className='mb-3 text-xl font-semibold'>{t('Coursework')}</h2>
               <p className='text-text-secondary max-lg:max-w-[500px]'>
-                {t('Computer Architecture, Embedded Systems Design, Digital Design Lab, Mobile Ubiquitous Computing')}
+                {t('Object-Oriented Programming/Design, Database Systems, Data Structures and Algorithms, Computer Architecture, Embedded Systems Design, Digital Design Lab, Mobile Ubiquitous Computing')}
               </p>
             </div>
           </div>
