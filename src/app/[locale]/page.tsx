@@ -98,9 +98,13 @@ export default function DashboardPage() {
             <div className='w-2/3 text-lg text-text-secondary'>
               <p>
                 I&apos;m a Computer Engineering undergraduate at Georgia Institute of Technology with a minor in FinTech.
-                I have experience in data analytics as well as low-level programming with embedded systems. I am currently seeking a career
-                in data engineering, hardware engineering, or technical product management in financial markets. <br />
-                During my free time, I love to run, play badminton or golf, and visit cafes around the city.
+               </p>
+               <p>
+                I have experience in working with databases as well as low-level programming with embedded systems. I am currently seeking a career
+                in data analytics/engineering, hardware engineering, or technical product management. 
+                <p>
+                During my free time, I love to run, play badminton or golf, and visit cafes around the city. I enjoy watching Formula 1 and creating projects analyzing financial markets.
+                </p>
               </p>
             </div>
           </div>
